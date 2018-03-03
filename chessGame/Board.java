@@ -193,7 +193,6 @@ class Board
   // This Function removes player at position xi,yi temporarily and return piece of color != given color that can reach given final position . 
 	Piece check(String color,int xi,int yi, int xf , int yf)
 	{
-		System.out.println("Sudhanshu");
 		Piece temp=null;
 		if(xi>=0&&yi>=0)
 		{
@@ -494,14 +493,20 @@ class Board
               return false;								  
 					}
 					if(board[xf][yf].p1==null)
+					{
+						pi.first = -1;
 						return true;
+					}
 					else
             return false;								  
 				}
 				else
 				{
 					if((board[xf][yf].p1!=null)&&(board[xf][yf].p1.color!=col))
+					{
+						 pi.first = -1;
             return true;							  
+					}
 					else
             return false;							  
 				}

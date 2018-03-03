@@ -83,12 +83,12 @@ class Game
 		  if(color=="white")
 		  {
 				boar.display();
-			  System.out.println(" Turn of white player \n Enter initial positon");
+			  System.out.println("Turn of white player \nEnter initial positon");
 			  int xi=scan.nextInt();
 			  int yi=scan.nextInt();
 				if(((xi>=0)&&(xi<=7))&&((yi>=0)&&(yi<=7)))//checking whether initial position is valid or not.
 				{
-				  System.out.println(" Enter final position");
+				  System.out.println("Enter final position");
 			    int xf=scan.nextInt();
 			    int yf=scan.nextInt();
 					if(((xf>=0)&&(xf<=7))&&((yf>=0)&&(yf<=7)))//checking whether final position is valid or not.
@@ -131,12 +131,12 @@ class Game
 			else
 			{
 				boar.display();
-			  System.out.println(" Turn of black player \n Enter initial positon");
+			  System.out.println("Turn of black player \nEnter initial positon");
 			  int xi=scan.nextInt();
 			  int yi=scan.nextInt();
 				if(((xi>=0)&&(xi<=7))&&((yi>=0)&&(yi<=7)))//checking whether initial position is valid or not.
 				{
-				  System.out.println(" Enter final position");
+				  System.out.println("Enter final position");
 			    int xf=scan.nextInt();
 			    int yf=scan.nextInt();
 					if(((xf>=0)&&(xf<=7))&&((yf>=0)&&(yf<=7)))//checking whether final position is valid or not.

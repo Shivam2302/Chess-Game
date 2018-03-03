@@ -3,7 +3,7 @@ class Queen extends Piece
 {
   Queen(String col)
 	{
-    	color=col;
+    color=col;
 		status=0;
 		type='q';
 	}

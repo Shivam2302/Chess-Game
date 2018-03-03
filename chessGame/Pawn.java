@@ -1,10 +1,9 @@
 package chessGame;
 class Pawn extends Piece
 {
-	int first=0;
 	Pawn(String col)
 	{
-    	color=col;
+    color=col;
 		status=0;
 		type='p';
 	}
@@ -17,7 +16,6 @@ class Pawn extends Piece
 			{ 
 			  if((xf-xi)==2||(xf-xi==-2)||(xf-xi==1)||(xf-xi==-1))
 				{
-					first=-1;
 				  return true;  
 				}
 			  else
@@ -26,8 +24,7 @@ class Pawn extends Piece
 			else 
 			{
 				if((xf-xi==1||xf-xi==-1)&&(yf-yi==1||yf-yi==-1))
-				{
-					first=-1;   
+				{   
 					return true;
 				} 
         else
